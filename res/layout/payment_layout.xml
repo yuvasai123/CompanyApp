@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:id="@+id/rowLayout">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        app:cardBackgroundColor="#000000"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="0dp"
+        android:padding="10dp"
+
+        app:cardUseCompatPadding="false">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/buttonshape"
+            android:padding="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/mainn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/customerName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/abeezee"
+                    android:text="suraj enterprises"
+                    android:textAllCaps="false"
+                    android:textColor="#250F0F"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/orderDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="24-09-2001"
+                    android:textStyle="bold" />
+
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainn"
+                android:text="Amount : "
+                android:id="@+id/amounts"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/mainn"
+                android:layout_toRightOf="@+id/amounts"
+                android:text="100000 "
+                android:id="@+id/totalamount"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amounts"
+                android:text="Mode of Payment : "
+                android:id="@+id/modeofpay"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/totalamount"
+                android:layout_toRightOf="@id/modeofpay"
+                android:text="731245686653"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/cashtype"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/modeofpay"
+                android:text="Description : "
+                android:id="@+id/description"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cashtype"
+                android:layout_toRightOf="@id/description"
+                android:text=""
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:id="@+id/paydescription"/>
+
+
+
+
+
+
+            </RelativeLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
