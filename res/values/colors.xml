@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#ed5f1e</color>
+    <color name="yellow">#FFDD95</color>
+    <color name="lightblue">#40A2D8</color>
+    <color name="red">#A94438</color>
+    <color name="homefragment">#306FCD</color>
+    <color name="orderlistfragment">#489AEC</color>
+    <color name="pendinglistfragment">#47A0E4</color>
+
+
+</resources>
