@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:navigationIcon="@drawable/baseline_arrow_back_24"
+        style="@style/Theme.OrderList"
+        app:title="Add Your Expenditure"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:padding="16dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/customerNameLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Customer Name"
+                android:textColor="#000000"
+                android:textSize="16sp"/>
+
+            <EditText
+                android:id="@+id/updatedcustomerName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/customerNameLabel"
+                android:hint="Enter the customer name"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:inputType="text"
+                android:background="@drawable/edit_text_border"/>
+
+            <TextView
+                android:id="@+id/idEdtDateLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatedcustomerName"
+                android:text="Date"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/updatedidEdtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/idEdtDateLabel"
+                android:hint="Enter date"
+                android:padding="10dp"
+                android:focusable="false"
+                android:clickable="true"
+                android:cursorVisible="false"
+                android:background="@drawable/edit_text_border"/>
+
+
+
+            <TextView
+                android:id="@+id/totalamountLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatedidEdtDate"
+                android:text="Total Amount"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/updatedtotalamount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/totalamountLabel"
+                android:hint="Enter the total amount"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType="number"/>
+
+            <TextView
+                android:id="@+id/descriptionedittextLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updatedtotalamount"
+                android:text="Description"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/updateddescriptionedittext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/descriptionedittextLabel"
+                android:hint="Enter the description"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_border"
+                android:inputType="text"/>
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/updatedaddexpenditurebtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/updateddescriptionedittext"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:padding="12dp"
+                android:text="Submit"
+                android:textColor="#FFFFFF"
+                android:backgroundTint="#2196F3"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
