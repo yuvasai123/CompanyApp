@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.SearchView">
+        <!-- Set text color to your custom white color -->
+        <item name="android:textColor">@color/white</item>
+        <!-- Set text appearance -->
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+        <!-- Set text hint color to your custom white color -->
+        <item name="android:textColorHint">@color/white</item>
+    </style>
+</resources>
